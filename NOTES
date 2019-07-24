@@ -1,0 +1,10 @@
+# Install freetype2:
+https://sourceforge.net/projects/freetype/
+sudo make install
+
+# Install fontconfig
+sudo apt install libfontconfig1=2.12.6-0ubuntu2
+sudo apt install libfontconfig1-dev 
+
+# Fix X11 headers
+sudo apt install libxft-dev
