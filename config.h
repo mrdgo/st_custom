@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "DejaVu Sans Mono:pixelsize=17:antialias=true:autohint=true";
+static char *font = "DejaVu Sans Mono:pixelsize=14:antialias=true:autohint=true";
 static int borderpx = 10;
 
 /*
@@ -152,6 +152,13 @@ static unsigned int mousebg = 0;
  * doesn't match the ones requested.
  */
 static unsigned int defaultattr = 11;
+
+/*
+ * Force mouse select/shortcuts while mask is active (when MODE_MOUSE is set).
+ * Note that if you want to use ShiftMask with selmasks, set this to an other
+ * modifier, set to 0 to not use it.
+ */
+static uint forcemousemod = ShiftMask;
 
 /*
  * Internal mouse shortcuts.
